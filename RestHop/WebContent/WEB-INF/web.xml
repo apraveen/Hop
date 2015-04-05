@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:web="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="simple" version="2.4">
+	<servlet>
+		<servlet-name>SuggestionServlet</servlet-name>
+		<servlet-class>com.lahacks.SuggestionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SuggestionServlet</servlet-name>
+		<url-pattern>/suggest</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>TrendingServlet</servlet-name>
+		<servlet-class>com.lahacks.TrendingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TrendingServlet</servlet-name>
+		<url-pattern>/trend</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>AddUserServlet</servlet-name>
+		<servlet-class>com.lahacks.AddUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddUserServlet</servlet-name>
+		<url-pattern>/addUser</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>DeleteUserServlet</servlet-name>
+		<servlet-class>com.lahacks.DeleteUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteUserServlet</servlet-name>
+		<url-pattern>/removeUser</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>GroupCreateServlet</servlet-name>
+		<servlet-class>com.lahacks.GroupCreateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GroupCreateServlet</servlet-name>
+		<url-pattern>/createGroup</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>NewUserCreationServlet</servlet-name>
+		<servlet-class>com.lahacks.NewUserCreationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>NewUserCreationServlet</servlet-name>
+		<url-pattern>/newuser</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>FindGroupServlet</servlet-name>
+		<servlet-class>com.lahacks.FindGroupServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FindGroupServlet</servlet-name>
+		<url-pattern>/findGroup</url-pattern>
+	</servlet-mapping>
+
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
