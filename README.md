@@ -17,3 +17,4 @@ We tested the application with 30 different users and created around 70 events i
 
 Future scope is development of an Android app and Windows mobile app for Hop using the same rest services and thus make it cross platform and more user friendly. We also had an idea of integrating DirecTv in the app by users creating tv show marathon groups and people could join in this activity and DirecTV could also show groups like these around the area.
 
+The front end of the code is at https://github.com/jazzTheJackRabbit/lahacks-hop
